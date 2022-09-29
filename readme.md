@@ -29,3 +29,7 @@ My questions are:
    * I thought that the dialect was inferred from the uri `postgresql`.
    * I _no such module_ with `postgres+psycopg2`
 2. If not, how can I recover the original type?
+
+# Logged as
+
+Issue is [logged here](https://github.com/sqlalchemy/sqlalchemy/discussions/8592).
