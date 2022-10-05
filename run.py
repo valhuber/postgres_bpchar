@@ -16,4 +16,6 @@ engine = create_engine("postgresql://postgres:p@localhost/postgres")
 metadata = MetaData(engine)
 metadata.reflect(engine)
 
-print("open with metadata")
+dialect = engine.dialect  # sqlalchemy.dialects.postgresql.psycopg2.PGDialect_psycopg2
+
+print(f'open with metadata, dialect: {dialect}')
