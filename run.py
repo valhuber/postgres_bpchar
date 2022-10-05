@@ -17,5 +17,6 @@ metadata = MetaData(engine)
 metadata.reflect(engine)
 
 dialect = engine.dialect  # sqlalchemy.dialects.postgresql.psycopg2.PGDialect_psycopg2
+dialect_name = dialect.name
 
-print(f'open with metadata, dialect: {dialect}')
+print(f'open with metadata, engine.dialect.name: {dialect_name}')
